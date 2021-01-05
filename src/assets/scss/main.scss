@@ -1,12 +1,7 @@
 @tailwind base;
 
 blockquote {
-  @apply border-l;
-  @apply border-l-4;
-  @apply border-l-blue-500;
-  @apply pl-4;
-  @apply italic;
-  @apply my-8;
+  @apply border-l border-l-4 border-l-blue-500 pl-4 italic my-8;
 
   p {
     padding: 0 !important;
@@ -14,29 +9,19 @@ blockquote {
 }
 
 pre {
-  @apply border-l;
-  @apply border-l-2;
-  @apply border-l-gray-500;
-  @apply pl-4;
-  @apply mt-4;
-  @apply text-base;
-  @apply break-words;
-  @apply overflow-x-auto;
+  @apply border-l border-l-2 border-l-gray-500 pl-4 mt-4 text-base break-words overflow-x-auto;
 }
 
 ol {
-  @apply list-decimal;
-  @apply ml-5;
+  @apply list-decimal ml-5;
 }
 
 ul {
-  @apply list-disc;
-  @apply ml-5;
+  @apply list-disc ml-5;
 }
 
 :not(pre)>code {
-  @apply text-red-600;
-  @apply text-base;
+  @apply text-red-600 text-base;
 }
 
 @tailwind components;
@@ -79,23 +64,14 @@ ul {
 }
 
 .flex-post {
-  @apply border-b;
-  @apply border-b-gray-300;
-  @apply flex-col;
-  @apply w-full;
+  @apply border-b border-b-gray-300 flex-col w-full;
 
   .post-card-image {
-    @apply h-56;
-    @apply w-full;
-    @apply object-cover;
-    @apply rounded;
-    @apply relative;
+    @apply h-56 w-full object-cover rounded relative;
   }
 
   .post-card-title {
-    @apply leading-none;
-    @apply text-2xl;
-    @apply font-medium;
+    @apply leading-none text-2xl font-medium;
   }
 
   .post-card-excerpt {
@@ -109,27 +85,19 @@ ul {
 
 @media (min-width: 768px) {
   .with-large>.flex-post:nth-child(6n+1) {
-    @apply flex-100;
-    @apply flex-row;
+    @apply flex-100 flex-row;
 
     .post-card-image-link {
-      @apply flex-auto;
-      @apply relative;
+      @apply flex-auto relative mr-6;
       min-height: 380px;
-      @apply mr-6;
     }
 
     .post-card-image {
-      @apply absolute;
-      @apply h-full;
-      @apply w-full;
-      @apply object-cover;
-      @apply rounded-lg;
+      @apply absolute h-full w-full object-cover rounded-lg;
     }
 
     .post-card-content {
-      @apply flex-post-large-content;
-      @apply self-center
+      @apply flex-post-large-content self-center;
     }
 
       .post-card-title {
@@ -157,13 +125,10 @@ body[data-theme="dark"] {
     }
 
     .pagination li {
-      @apply bg-gray-700;
-      @apply text-gray-200;
-      @apply border-gray-600;
+      @apply bg-gray-700 text-gray-200 border-gray-600;
 
       &:hover {
-        @apply bg-gray-600;
-        @apply text-gray-900;
+        @apply bg-gray-600 text-gray-900;
       }
     }
 
