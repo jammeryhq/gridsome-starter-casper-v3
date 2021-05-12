@@ -23,7 +23,7 @@
     "v-tooltip": "^2.1.2",
     "core-js": "^3.8.2",
     "gridsome-plugin-tailwindcss": "^4.1.1",
-    "postcss": "^8.2.2",
+    "postcss": "^8.2.10",
     "autoprefixer": "^9.8.6",
     "postcss-preset-env": "^6.7.0",
     "postcss-import": "^12.0.1"
