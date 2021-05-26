@@ -19,7 +19,7 @@ module.exports = {
         },
         presetEnvConfig: {},
         shouldPurge: false,
-        shouldImport: true,
+        shouldImport: false,
         shouldTimeTravel: true,
         shouldPurgeUnusedKeyframes: true,
       }
